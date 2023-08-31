@@ -11,13 +11,7 @@ struct HeaderView: View {
     
     var header: Header
     
-    @State private var showHeadline: Bool = false
-    
-    var slideInAnimation: Animation {
-        Animation.spring(response: 1.5, dampingFraction: 0.5, blendDuration: 0.5)
-            .speed(1)
-            .delay(0.25)
-    }
+    @State private var offsetY = 220.0
     
     var body: some View {
         ZStack {
@@ -49,10 +43,14 @@ struct HeaderView: View {
                 .background(Color("ColorBlackTransparentLight"))
             }
             .frame(width: 285, height: 105, alignment: .center)
-            .offset(x: -60, y: showHeadline ? 75 : 220)
-            .animation(slideInAnimation)
+            .offset(x: -60, y: offsetY)
             .onAppear {
-                self.showHeadline.toggle()
+                withAnimation(.spring(response: 1.5, dampingFraction: 0.5, blendDuration: 0.5) ) {
+                    self.offsetY = 75.0
+                }
+            }
+            .onDisappear {
+                offsetY = 220.0
             }
         }
         .frame(width: 480, height: 320, alignment: .center)

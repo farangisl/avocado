@@ -30,6 +30,8 @@
 		0FAE8A452A9867FC00D6F5AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE8A442A9867FC00D6F5AE /* Assets.xcassets */; };
 		0FAE8A482A9867FC00D6F5AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE8A472A9867FC00D6F5AE /* Preview Assets.xcassets */; };
 		0FAE8A702A98CB7F00D6F5AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FAE8A6F2A98CB7F00D6F5AE /* LaunchScreen.storyboard */; };
+		0FC1202C2AA054290061F9D5 /* RipeningModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1202B2AA054290061F9D5 /* RipeningModal.swift */; };
+		0FC1202E2AA054D00061F9D5 /* RipeningData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1202D2AA054D00061F9D5 /* RipeningData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		0FAE8A472A9867FC00D6F5AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FAE8A4E2A9884E900D6F5AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0FAE8A6F2A98CB7F00D6F5AE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FC1202B2AA054290061F9D5 /* RipeningModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningModal.swift; sourceTree = "<group>"; };
+		0FC1202D2AA054D00061F9D5 /* RipeningData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				0F9EB5B12A9CB7AA001D21D5 /* HeaderData.swift */,
 				0F77A9102A9E00610034CF16 /* FactData.swift */,
 				0F77A9142A9E0F8A0034CF16 /* RecipeData.swift */,
+				0FC1202D2AA054D00061F9D5 /* RipeningData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 				0F9EB5AF2A9CB730001D21D5 /* HeaderModel.swift */,
 				0F77A9122A9E0EBE0034CF16 /* RecipeModel.swift */,
 				0F77A90E2A9DFE8A0034CF16 /* FactModel.swift */,
+				0FC1202B2AA054290061F9D5 /* RipeningModal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,10 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC1202C2AA054290061F9D5 /* RipeningModal.swift in Sources */,
 				0F9EB5AA2A9C7160001D21D5 /* SettingsView.swift in Sources */,
 				0F9D01A92A9F40ED00CADD91 /* RecipeRatingView.swift in Sources */,
 				0FAE8A432A9867FB00D6F5AE /* ContentView.swift in Sources */,
 				0F9EB5AC2A9C717E001D21D5 /* AppView.swift in Sources */,
+				0FC1202E2AA054D00061F9D5 /* RipeningData.swift in Sources */,
 				0F9EB5A82A9C7130001D21D5 /* RipeningStagesView.swift in Sources */,
 				0FAE8A412A9867FB00D6F5AE /* AvocadosApp.swift in Sources */,
 				0F9EB5A62A9C70F4001D21D5 /* AvocadosView.swift in Sources */,
